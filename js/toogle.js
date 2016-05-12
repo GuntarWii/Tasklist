@@ -52,60 +52,7 @@ function tooggle() {
 	function sideOption() {
 		console.log("testing")
 	}
-	//
-	//	function docClick(e) {
-	//		var target = e.target;
-	////		console.log(this.children.length)
-	////		console.log(this.childNodes)
-	//		for(var i = 0; i < this.children.length; i++){
-	////			console.log(this.childNodes[i])
-	//			
-	//			if(this.children[i].classList.contains("task-value")){
-	//				console.log("big task value")
-	//				
-	//				var test = this.children[i];
-	//				
-	//				console.log(test)
-	//			}else if(this.children[i].classList.contains("task-name")){
-	////				console.log(this.children[i])
-	//				
-	//				var mytest = this.children[i];
-	//				
-	//				console.log(mytest)
-	//				console.log(mytest.children[0])
-	//				if(mytest.classList.contains("task-value")){
-	//					
-	//					console.log("more task")
-	//				}else{
-	//					console.log("test")
-	//				}
-	//			}
-	//		}
-	////		
-	//
-	//
-	////sourcetree
-	//		
-	//	
-	//		
-	//	}
-
-
+	
 }
-//
+
 tooggle()
-
-
-//docclick = function(e){
-// var target = e.target
-//{
-//
-//}
-//while(target != otion)
-//{
-//if(target ==document.body){option.className.add("hidden")}
-//return;
-//----document.removeEventlstener("click" docClcik)
-//}
-//
-//}
