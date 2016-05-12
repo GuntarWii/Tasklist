@@ -68,6 +68,7 @@ button{
 
 .hidden{
     display: none;
+    
 }
 
 .checked{
@@ -185,8 +186,30 @@ header{
 .search-btn,.add-task-btn{
     color: rgba(255, 255, 255, 0.5);
     font-size: 24px;
-    padding-left: 13px;
 }
+
+.search-btn{
+    padding-right: 13px;
+}
+
+.rotation{
+    
+    -webkit-animation: roll 10s infinite;
+          animation: roll 1.s infinite;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+    rotation-point: center center;
+   
+    	/* Firefox */
+	/* WebKit */
+	-webkit-transition: all 1s ease;
+	/* Opera */
+	/* Standard */
+	-webkit-transition: all 2s ease;
+	transition: all 2s ease;
+    
+}
+
 
 /**********************************
           * Navigation
@@ -206,9 +229,14 @@ header{
     font-size: 23px;
 }
 
+.navbar li:hover{
+    opacity: 0.4;
+}
+
 .arrow::after{
     content: '';
     position: absolute;
+    top: 7%;
     right: 0%;
     border-top: 10px solid transparent;
     border-right: 11px solid #4c4b62;
@@ -249,6 +277,10 @@ header{
     background-color: rgba(0, 0, 0, 0.35);
     opacity: 0.4;
 }
+.checked >.col-1{
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
 .checked >.col-xs-1{
     opacity: 0.4;
 }
@@ -290,6 +322,9 @@ header{
 
 .big-task-content{
     padding: 25px 35px 15px 25px;
+    height: 195px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .favourite{
@@ -312,6 +347,18 @@ header{
 
 .task-content-small{
     padding: 25px 30px 15px 30px;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 85px;
+
+}
+
+.task-content-medium{
+   padding: 25px 30px 15px 30px;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 151px;
+    
 }
 .location-and-date-small{
     margin: 0;
@@ -323,6 +370,8 @@ header{
     line-height: 1.5;
     font-size: 15px;
 }
+
+
 
 /**********************************
           *Search bar
@@ -372,10 +421,24 @@ header{
 }
 
 .add-new-task:last-child {
-    background-color: rgba(90, 100, 124, 1);
+    background-color: rgba(90, 100, 124, 0.96);
 }
 .add-task-icons {
     float: right;
+}
+
+.add-new-task textarea{
+        box-sizing: border-box;
+    font-size: 28px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    resize: none;
+    min-height: 46px;
+    padding: 0;
+    overflow-y: hidden !important;
+    float: left;
+    
 }
 
 
@@ -400,7 +463,14 @@ header{
     padding: 10px;
     float: right;
     bottom: 17px;
+    height: 45px;
+    width: 45px;
 }
+
+.select-category-icons button:first-child{
+    margin-right: 11px;
+}
+
 .select-category-icons span {
     font-size: 23px;
     color: #f0f0f0;
@@ -442,7 +512,7 @@ header{
 
 .task-details {
     position: absolute;
-    top: 161px;
+    top: 131px;
     bottom: 0;
     right: 0;
     background-color: #55566e;
@@ -543,7 +613,7 @@ header{
 
 .claendar {
     position: absolute;
-    top: 162px;
+    top: 131px;
     bottom: 0;
     right: 300px;
     background-color: rgba(0, 0, 0, 0.43);
@@ -627,3 +697,29 @@ header{
 .cell-background {
     background-color: #dce0e4;
 }
+
+
+/***********************
+Fix section 
+*************************/
+
+/*Scrol bar*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+/*Rotate*/
+
+
+
