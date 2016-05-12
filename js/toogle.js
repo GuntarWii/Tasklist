@@ -48,10 +48,6 @@ function tooggle() {
 
 
 	}
-
-	function sideOption() {
-		console.log("testing")
-	}
 	
 }
 
