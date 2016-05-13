@@ -1,4 +1,3 @@
-function tooggle() {
 
 	function $(e) {
 		return document.querySelector(e);
@@ -7,6 +6,8 @@ function tooggle() {
 	function $$(e) {
 		return document.querySelectorAll(e);
 	}
+
+function tooggle() {
 
 	var toggle = $$(".toggle-option");
 	for (var i = 0; i < toggle.length; i++) {
