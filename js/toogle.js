@@ -35,14 +35,12 @@ function tooggle() {
 
 				if (dopOption.className.indexOf("hidden") == -1) {
 
-					console.log(dopOptTarget.parentElement)
 					if (dopOptTarget.parentElement == $(".header-opt-btn")) {
 						options[i].classList.toggle("hidden");
 					}
 					// ja taisa parbaude a target ja tiek klikšķināts arpus ditiles lauka tad toggle ja ne tad radit dop options				
 				} else {
 					options[i].classList.toggle("hidden");
-					console.log("tssss")
 				}
 			}
 		}
