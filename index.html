@@ -28,8 +28,11 @@
 						<textarea id="task-text" name="Task" rows="1" placeholder="Add a new task" data-autosize-on="true" style="/* overflow: hidden;  word-wrap: break-word;height: 46px; "></textarea>
 
 						<div class="add-task-icons">
-							<button href="#"><span class="fa fa-star-o fa-lg favorite"></span></button>
-							<button href="#"><span class="fa fa-calendar fa-lg"></span></button>
+<label class="wi-replace-icons">
+	<input type="checkbox" href="#" class="add-to-favorite">
+	<span class="fa fa-star-o fa-lg favorite"></span>
+</label>
+							<button href="#" class="add-the-date"><span class="fa fa-calendar fa-lg"></span></button>
 							<span href="#" class="">
                                <span class="fa fa-circle fa-lg category-button"></span></span>
 						</div>
@@ -39,10 +42,10 @@
 							Select a category
 						</p>
 						<div class="select-category-icons">
-							<button class="green checked" id="social"><span class=" fa fa-users"></span></button>
-							<button class="purple checked" id="network"><span class=" fa fa-desktop"></span></button>
-							<button class="yellow checked" id="work"><span class=" fa fa-briefcase"></span></button>
-							<button class="red" id="home"><span class="fa fa-home"></span></button>
+							<button class="green checked category-btn" id="social"><span class=" fa fa-users"></span></button>
+							<button class="purple checked category-btn" id="network"><span class=" fa fa-desktop"></span></button>
+							<button class="yellow checked category-btn" id="work"><span class=" fa fa-briefcase"></span></button>
+							<button class="red category-btn" id="home"><span class="fa fa-home"></span></button>
 						</div>
 						<span class="category-button-arrow"></span>
 					</div>
@@ -164,7 +167,7 @@
 								<span class="centered fa fa-circle-thin fa-lg"></span>
 							</div>
 							<div class="col-11 taks task-content-details-big">
-								<h2>Buy a new toothbrush</h2>
+								<h2 class="side-opt-task-name">Buy a new toothbrush</h2>
 								<button href="#" class="favourite-2"><span class="fa fa-star-o"></span></button>
 							</div>
 						</div>
@@ -310,6 +313,10 @@
 	<script src="js/creat-task.js"></script>
 	<script src="js/javascript.js"></script>
 	<script src="js/toogle.js"></script>
+	<script src="js/side-option.js"></script>
 </body>
 
 </html>
+
+
+

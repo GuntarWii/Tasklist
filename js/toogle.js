@@ -26,6 +26,8 @@ function tooggle() {
 		//		console.log(this)
 		for (var i = 0; i < options.length; i++) {
 			var hiddenAtr = options[i].dataset.toggleNumber;
+			
+			console.log(hiddenAtr)
 
 			if (current == hiddenAtr) {
 

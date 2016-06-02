@@ -88,19 +88,19 @@ button{
     background-color: #55566e;
 }
 
-.red{
+.red,.home{
     background-color: #ff5f65;
 }
 
-.yellow{
+.yellow,.work{
     background-color: #fdcd63;
 }
 
-.pink{
+.pink,.network{
     background-color: #d575f8;
 }
 
-.green{
+.green,.social{
     background-color: #00eeb8;
 }
 
@@ -369,6 +369,7 @@ header{
     margin: 23px 0 0;
     line-height: 1.5;
     font-size: 15px;
+	word-break: break-all;
 }
 
 
@@ -721,5 +722,46 @@ Fix section
 
 /*Rotate*/
 
+/*Re build css*/
+
+
+
+.wi-replace-icons input[type="checkbox"] {
+    display: none;
+}
+ 
+.wi-replace-icons span:before {
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 1em;
+    height: 1em;
+    content: '\f006';
+    margin-right: .3em;
+}
+ 
+.wi-replace-icons input[type="checkbox"]:checked ~ span:before {
+    content: '\f005';
+}
+
+
+/*Category*/
+
+
+.cat-replace-icons input[type="checkbox"] {
+    display: none;
+}
+ 
+.cat-replace-icons span:before {
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 1em;
+    height: 1em;
+    content: '\f006';
+    margin-right: .3em;
+}
+ 
+.cat-replace-icons input[type="checkbox"]:checked ~ span:before {
+    content: '\f005';
+}
 
 
