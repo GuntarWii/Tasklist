@@ -16,16 +16,17 @@ document.body.addEventListener('click', function () {
 	while (target.parentNode) {
 		if (target.hasAttribute("data-id-number")) {
 			var currentAtr = target.getAttribute("data-id-number");
+		
 			break;
 		}
+		
 		target = target.parentNode;
-
 
 		}
 
 	var currentAtr;
 	
-//	console.log(currentAtr)
+	console.log(currentAtr)
 	
 		for (var i = 0; i < TaskListArray.length; i++) {
 
@@ -35,7 +36,7 @@ document.body.addEventListener('click', function () {
 //				console.log(TaskListArray[currentAtr].Taskname + "ssss")
 //				var sidOptTaskName = $(".side-opt-task-name");
 //				sidOptTaskName.innerHTML = TaskListArray[currentAtr].Taskname
-				
+				console.log(TaskListArray[i].taskid)
 				sideOption(currentAtr)
 				
 			}
@@ -48,7 +49,7 @@ document.body.addEventListener('click', function () {
 
 function sideOption(currentAtr){
 	var sidOptTaskName = $(".side-opt-task-name");
-	console.log(sidOptTaskName)
+//	console.log(sidOptTaskName)
 	
 	sidOptTaskName.innerHTML = TaskListArray[currentAtr].Taskname
 
