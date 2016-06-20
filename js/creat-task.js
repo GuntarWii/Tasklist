@@ -54,6 +54,15 @@ var TaskListArray = [
 		TaskDate: undefined,
 		TaskStatus: undefined,
 		taskid: 2
+	 },
+    
+    task = {
+		Taskname: "ssss--2",
+		Category: "social",
+		Favorite: "yes",
+		TaskDate: undefined,
+		TaskStatus: undefined,
+		taskid: 3
 	 }
 
 ];
@@ -139,10 +148,12 @@ function category() {
 // janonem swich un taskCategory = this id
 var taskIndex = -1;
 
-for (var i = 0; i < TaskListArray.length; i++) {
-	createTask()
+    for (var i = 0; i < TaskListArray.length; i++) {
+        createTask()
 
-}
+    }
+
+
 
 
 function createTask(TasknameId) {
@@ -150,7 +161,7 @@ function createTask(TasknameId) {
 		colA = document.getElementById('col-a').offsetHeight,
 		colB = document.getElementById('col-b').offsetHeight,
 		taskBoks = document.createElement("div"),
-		favorite = $(".main-body");
+		favorite = $(".favorite-task-block");
 
 
 	//	taskIndex += 1

@@ -60,25 +60,26 @@
 		<main class="row offset-2 offset-10">
 			<nav class="menu col-2">
 				<ul class="navbar">
-					<li class="purple arrow " data-category-filter="yes">
+					<li class="purple arrow cat-filtr" data-category-filter="all">
 						<span class="fa fa-inbox fa-lg"></span>
 					</li>
-					<li class="red first">
+					<li class="red first cat-filtr" data-category-filter="work">
 						<span class="fa fa-home fa-lg"></span>
 					</li>
-					<li class="yellow">
+					<li class="yellow cat-filtr" data-category-filter="home">
 						<span class="fa fa-desktop fa-lg"></span>
 					</li>
-					<li class="purple">
+					<li class="purple cat-filtr" data-category-filter="network">
 						<span class="fa fa-briefcase fa-lg"></span>
 					</li>
-					<li class="green">
+					<li class="green cat-filtr" data-category-filter="social">
 						<span class="fa fa-users fa-lg"></span>
 					</li>
 				</ul>
 			</nav>
 			<div class="main-body col-10">
-				<section class="main-task offset-1 offset-10m">
+                <div class="favorite-task-block">
+                    				<section class="main-task offset-1 offset-10m">
 					<div class="col-1 checkbox">
 						<button class="toggleBtn">
 							<i class="centered fa fa-circle-thin fa-lg"></i>
@@ -91,6 +92,7 @@
 					</div>
 					<div class="col-md-1 red"></div>
 				</section>
+                </div>
 				<section class="details hidden row option" data-toggle-number="3">
 					<div class="claendar  col-6">
 						<div class="set-due-date hidden option" data-toggle-number="5">

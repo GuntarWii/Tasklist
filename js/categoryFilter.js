@@ -7,9 +7,12 @@ function $$(e) {
 }
 
 
-var home = $(".first");
+var datacat= $$(".cat-filtr");
 
-	home.addEventListener('click', categryFiltr, false);
+    for(var i = 0; i < datacat.length; i++){
+        datacat[i].addEventListener('click', categryFiltr, false);
+    }
+
 
 
 //document.body.addEventListener('click', function () {
@@ -29,14 +32,18 @@ var home = $(".first");
 
 
 function categryFiltr(){
-	
+	 var test = this.getAttribute("data-category-filter")
+    console.log(test)
+    console.log(this)
+    
 	$(".col-a").innerHTML = ""
 	$(".col-b").innerHTML = ""
+    $(".favorite-task-block").innerHTML = ""
 	
 			for (var i = 0; i < TaskListArray.length; i++) {
 
 
-			if (TaskListArray[i].Category == "social") {
+			if (TaskListArray[i].Category == test) {
 				
 				console.log(TaskListArray[i].taskid)
 				var TasknameId = TaskListArray[i].taskid;
@@ -44,8 +51,13 @@ function categryFiltr(){
 							createTask(TasknameId)
 ////							createTask(Taskname,Category)
 //							console.log(Taskname,Category)
-			}
+			}else if(test == "all"){
+            createTask(0)
+               console.log("sssssss")
+            }
 				
 				
 		}
+    
+
 }
