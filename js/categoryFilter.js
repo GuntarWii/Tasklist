@@ -32,10 +32,8 @@ var datacat= $$(".cat-filtr");
 
 
 function categryFiltr(){
-	 var test = this.getAttribute("data-category-filter")
-    console.log(test)
-    console.log(this)
-    
+	 var categoryFilterClass = this.getAttribute("data-category-filter")
+  
 	$(".col-a").innerHTML = ""
 	$(".col-b").innerHTML = ""
     $(".favorite-task-block").innerHTML = ""
@@ -43,7 +41,7 @@ function categryFiltr(){
 			for (var i = 0; i < TaskListArray.length; i++) {
 
 
-			if (TaskListArray[i].Category == test) {
+			if (TaskListArray[i].Category == categoryFilterClass) {
 				
 				console.log(TaskListArray[i].taskid)
 				var TasknameId = TaskListArray[i].taskid;
@@ -51,9 +49,12 @@ function categryFiltr(){
 							createTask(TasknameId)
 ////							createTask(Taskname,Category)
 //							console.log(Taskname,Category)
-			}else if(test == "all"){
-            createTask(0)
-               console.log("sssssss")
+			}else if(categoryFilterClass == "all"){
+            
+                    for(var i = 0; i < TaskListArray.length; i++){
+                        
+                        createTask(i)
+                    }
             }
 				
 				

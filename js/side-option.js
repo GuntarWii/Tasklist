@@ -26,7 +26,7 @@ document.body.addEventListener('click', function () {
 
 	var currentAtr;
 	
-	console.log(currentAtr)
+//	console.log(currentAtr)
 	
 		for (var i = 0; i < TaskListArray.length; i++) {
 
@@ -36,7 +36,7 @@ document.body.addEventListener('click', function () {
 //				console.log(TaskListArray[currentAtr].Taskname + "ssss")
 //				var sidOptTaskName = $(".side-opt-task-name");
 //				sidOptTaskName.innerHTML = TaskListArray[currentAtr].Taskname
-				console.log(TaskListArray[i].taskid)
+//				console.log(TaskListArray[i].taskid)
 				sideOption(currentAtr)
 				
 			}

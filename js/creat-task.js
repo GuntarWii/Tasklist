@@ -177,6 +177,7 @@ function createTask(TasknameId) {
 
 
 	taskBoks.className = "task";
+    taskBoks.setAttribute("data-id-number",taskIndex)
 
 
 
@@ -184,10 +185,10 @@ function createTask(TasknameId) {
 		taskBoks.innerHTML = '<section class="main-task offset-1 offset-10m">\
 					<div class="col-1 checkbox">\
 						<button class="toggleBtn">\
-							<i class="centered fa fa-circle-thin fa-lg"></i>\
+							<i class="centered fa fa-circle-thin fa-lg status-btn"></i>\
 						</button>\
 					</div>\
-					<div class="col-md-10 purple big-task-content toggle-option" data-toggle-number="3">\
+					<div class="col-md-10 purple big-task-content toggle-option"  data-toggle-number="3" toggle-option" id=" ' + taskIndex + '">\
 						<p class="location-and-date"><a href="#"><span class="fa fa-map-marker fa-lg"></span></a> At Tesco | Next monday</p>\
 						<a href="#" class="favourite"><span class="fa fa-star"></span></a>\
 						<h1 class="task-value">' + TaskListArray[taskIndex].Taskname + '</h1>\
@@ -201,9 +202,10 @@ function createTask(TasknameId) {
 		var col = (colB < colA) ? "col-b" : "col-a";
 		taskBoks.innerHTML = '\
 		<div class="col-md-2 checkbox">\
-			<button class="toggleBtn">\
-				<i class="centered fa fa-circle-thin fa-lg"></i>\
-			<button>\
+			<label class="status-replace-icons">\
+	<input type="checkbox" href="#" class="add-to-favorite">\
+	<span class="fa fa-star-o fa-lg task-status"></span>\
+</label>\
 		</div>\
 <div class="col-md-10 purple task-content-small toggle-option" id=" ' + taskIndex + '" data-toggle-number="3" data-id-number="' + taskIndex + '">\
 <p class="location-and-date location-and-date-small" id="time-now">Tomorrow</p>\

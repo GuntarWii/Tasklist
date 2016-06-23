@@ -37,7 +37,8 @@ header{
 }
 
 main{
-    background-color: rgba(76, 75, 98, 0.57);;
+    background-color: rgba(76, 75, 98, 0.57);
+    min-height: 415px;
 }
 
 a{
@@ -323,6 +324,7 @@ header{
 .big-task-content{
     padding: 25px 35px 15px 25px;
     height: 195px;
+    width: 512px;
     overflow: hidden;
     overflow-y: auto;
 }
@@ -764,4 +766,23 @@ Fix section
     content: '\f005';
 }
 
+
+/*----task status css*/
+
+.status-replace-icons input[type="checkbox"] {
+    display: none;
+}
+ 
+.status-replace-icons span:before {
+    font-family: "FontAwesome";
+    font-style: normal;
+    width: 1em;
+    height: 1em;
+    content: '\f1db';
+    margin-right: .3em;
+}
+ 
+.status-replace-icons input[type="checkbox"]:checked ~ span:before {
+    content: '\f058';
+}
 
